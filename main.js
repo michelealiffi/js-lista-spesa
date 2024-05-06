@@ -24,6 +24,10 @@ while(i === 'no') {
 
 console.log(shopList);
 
-shopList.forEach(element => {
-    document.getElementById('list').innerHTML = JSON.stringify(shopList);
-});
+const list = document.querySelector('#list');
+
+for(let i = 0; i < shopList.length; i++) {
+    const li = document.createElement('li');
+    li.innerText = shopList[i];
+    list.append(li);
+}
