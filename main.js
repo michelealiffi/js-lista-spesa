@@ -24,6 +24,6 @@ while(i === 'no') {
 
 console.log(shopList);
 
-let userShopList = document.getElementById('list');
-
-userShopList = shopList[''];
+shopList.forEach(element => {
+    document.getElementById('list').innerHTML = JSON.stringify(shopList);
+});
