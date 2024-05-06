@@ -1,0 +1,2 @@
+- Chiedere una lista della spesa
+- Stampare sulla pagina gli elementi della lista individualmente
